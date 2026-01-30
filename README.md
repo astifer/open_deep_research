@@ -1,5 +1,6 @@
 # Отчёт по безопасности Open Deep Research (LLM / Tooling / Prompt Security)
 
+> Видео отчет доступен по ссылке https://cloud.mail.ru/public/MTit/59yUL2Q6X или https://drive.google.com/file/d/1V4LDSkUWeZ1QePdcqFdrmYEhd-96J1VZ/view?usp=sharing
 ## Резюме
 
 В рамках работы проведён точечный аудит и усиление безопасности сервиса Open Deep Research в контексте использования внутри крупной консалтинговой компании (мультиагентный ресёрч по открытым источникам).

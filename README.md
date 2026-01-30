@@ -173,7 +173,7 @@
 
 **Реализация исправления:**  
 - Добавлена валидация на использование инструментов.  
-- Подход сделан конфигурируемым; добавлен новый конфиг для упрощения разработки и повышения гибкости. В diff видно исправление в configuration, deep_researcher и utils.
+- Подход сделан конфигурируемым; добавлен новый конфиг для упрощения разработки и повышения гибкости. В [начальном diff](https://github.com/astifer/open_deep_research/commit/87835b5f9a6192b3b971c90ad50f0d092c098e8c) видно исправление в configuration, deep_researcher и utils.
 - По логам, визуально и в ответах виден запрет. Например:
 ```sh
 tool_call agrs: {'path': '/Users/artem.pereverzev/reps/open_deep_research/consulting_data/confedential.txt', 'tail': 0, 'head': 0}

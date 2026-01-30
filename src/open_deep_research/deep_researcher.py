@@ -18,6 +18,7 @@ from langgraph.types import Command
 
 from open_deep_research.configuration import (
     Configuration,
+    CustomConfig,
 )
 from open_deep_research.prompts import (
     clarify_with_user_instructions,
@@ -41,6 +42,7 @@ from open_deep_research.state import (
 )
 from open_deep_research.utils import (
     anthropic_websearch_called,
+    custom_validate_tool,
     get_all_tools,
     get_api_key_for_model,
     get_model_token_limit,
@@ -470,11 +472,24 @@ async def researcher_tools(state: ResearcherState, config: RunnableConfig) -> Co
         for tool in tools
     }
     
-    # Execute all tool calls in parallel
+    # Filter tool calls
+    custom_config = CustomConfig.from_path_config()
     tool_calls = most_recent_message.tool_calls
+    filtered_tool_calls = []
+
+    for tool_call in tool_calls:
+        is_ok = custom_validate_tool(custom_config, tool_call)
+        if is_ok: 
+            filtered_tool_calls.append(tool_call)
+        else:
+            tool_call['name'] = ''
+            tool_call['args'] = {}
+            filtered_tool_calls.append(tool_call)
+
+    # Execute all tool calls in parallel
     tool_execution_tasks = [
         execute_tool_safely(tools_by_name[tool_call["name"]], tool_call["args"], config) 
-        for tool_call in tool_calls
+        for tool_call in filtered_tool_calls
     ]
     observations = await asyncio.gather(*tool_execution_tasks)
     

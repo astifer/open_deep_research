@@ -923,3 +923,36 @@ def get_tavily_api_key(config: RunnableConfig):
         return api_keys.get("TAVILY_API_KEY")
     else:
         return os.getenv("TAVILY_API_KEY")
+
+
+def validate_whitelist(config: CustomConfig, source: str):
+    if source not in config.allowed_sources:
+        return False
+    
+    return True
+
+def validate_blacklist(config: CustomConfig, source: str):
+    print("forbidden_sources=", config.forbidden_sources)
+    if source in config.forbidden_sources:
+        return False
+
+    return True
+
+def custom_validate_tool(config: CustomConfig, tool_call: Any) -> bool:
+    args = tool_call.get("args", {})
+    source = None
+    if 'path' in args:
+        source = str(args['path'])
+    elif 'source' in args:
+        source = str(args['source'])
+
+    print('SOURCE in func: ', source)
+    if source is None:
+        return True
+        
+    if config.source_validate_mode == 'blacklist':
+        return validate_blacklist(config, source)
+    if config.source_validate_mode == 'whitelist':
+        return validate_whitelist(config, source)
+    
+    return True

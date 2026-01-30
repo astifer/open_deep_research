@@ -1,0 +1,35 @@
+2024 — Revenue, Income and Taxes Report (consolidated and by division)
+In 2024, Alfa Astifer achieved stable revenue growth and increased cost control as its project portfolio expanded. Internal procedures for closing periods and allocating indirect costs were applied uniformly across all practices, which ensured comparability of data across departments.
+
+Getting into AI and create new departments for these tasks.
+
+Key indicators (2024):
+Revenue: RUB 44.9 million (+16.3% by 2023).
+Gross profit: RUB 18.4 million, gross margin 41.0%.
+Operating profit (EBIT): RUB 6.7 million, operating margin 14.9%.
+Net profit: RUB 4.8 million, net margin of 10.7%.
+DSO: 52 days.
+Invoices: 1,260 units, average bill of £35.6 thousand.
+Billing days: 57,400; average rate: £782/day; billing utilization: 80%.
+
+
+Revenue structure by division (2024):
+Technology: RUB 16.4 million (37%), margin 38%.
+Data & AI: RUB 10.6 million (24%), 44% margin.
+Strategy: RUB 8.7 million (19%), margin 51%.
+Operations: RUB 6.1 million (14%), margin 37%.
+Risk & Compliance: RUB 3.1 million (7%), 40% margin.
+
+
+Taxes and mandatory payments (2024):
+Income tax: 1.24 million RUB accrued, effective rate 22.8%.
+VAT/indirect taxes (net): 2.06 million RUB payable (outgoing 7.31 million, incoming 5.25 million).
+PHOTO: 21.9 million RUB;
+employer's social/insurance contributions: RUB 3.21 million (≈14.7% of the VAT).
+Other taxes/fees: RUB 0.27 million (including local fees and deductions for individual contracts).
+
+
+Insurance and insurance payments (2024):
+Insurance premiums (paid): 0.66 million RUB (Prof. liability 0.36 million, cyber 0.16 million, D&O 0.10 million, property 0.04 million).
+Insurance payments (received): 0.05 million RUB (compensation for transport incident and equipment damage).
+Claims/insurance claims reserve: RUB 0.22 million (including potential costs for external expertise).

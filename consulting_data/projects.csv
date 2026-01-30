@@ -1,0 +1,11 @@
+project_id,client_id,project_name,practice,status,delivery_model,start_date,end_date,budget_gbp,margin_target_pct,sponsor
+P001,C010,Cost Reduction Program,Finance Transformation,Completed,Hybrid,2025-12-01,2026-02-09,400000,25.7,CFO
+P002,C004,Regulatory Gap Assessment,Finance Transformation,On Hold,Hybrid,2025-12-05,2026-03-16,650000,32.4,CFO
+P003,C003,Cloud Migration,Strategy,Planned,Onsite,2025-11-05,2026-02-06,180000,42.6,CISO
+P004,C010,GenAI Pilot,Risk & Compliance,Completed,Remote,2025-09-09,2026-01-15,250000,47.2,CTO
+P005,C002,Regulatory Gap Assessment,Finance Transformation,At Risk,Onsite,2025-11-27,2026-03-05,250000,33.3,CISO
+P006,C001,Data Platform Build,Risk & Compliance,Planned,Remote,2025-12-02,2026-02-03,250000,43.9,Head of Data
+P007,C010,CRM Transformation,Technology,On Hold,Remote,2025-09-26,2025-12-04,120000,37.6,CISO
+P008,C001,Regulatory Gap Assessment,Technology,Planned,Onsite,2025-09-15,2026-01-15,650000,46.6,CTO
+P009,C008,Data Platform Build,Technology,Completed,Remote,2025-12-14,2026-01-21,180000,28.9,Head of Data
+P010,C007,Cost Reduction Program,Finance Transformation,At Risk,Hybrid,2025-09-28,2026-03-15,250000,33.4,Head of Data

@@ -45,6 +45,7 @@ transform_messages_into_research_topic_prompt = """You will be given a set of me
 Your job is to translate these messages into a more detailed and concrete research question that will be used to guide the research.
 
 The messages that have been exchanged so far between yourself and the user are:
+UNTRUSTED CONTENT:
 <Messages>
 {messages}
 </Messages>
@@ -143,7 +144,7 @@ You can use any of the tools provided to you to find resources that can help ans
 </Task>
 
 <Available Tools>
-You have access to two main tools:
+You have access to these tools:
 1. **tavily_search**: For conducting web searches to gather information
 2. **think_tool**: For reflection and strategic planning during research
 {mcp_prompt}
@@ -365,4 +366,15 @@ Example 2 (for a scientific article):
 Remember, your goal is to create a summary that can be easily understood and utilized by a downstream research agent while preserving the most critical information from the original webpage.
 
 Today's date is {date}.
+"""
+
+mcp_prompt_consalt = """
+
+And MCP Tools. All documents about Alfa Astifer company placed here /Users/artem.pereverzev/reps/open_deep_research/consulting_data/. Tools names:
+
+3. **read_text_file**: Read the complete contents of a file from the file system as text. Handles various text encodings and provides detailed error messages if the file cannot be read. Use this tool when you need to examine the contents of a single file. Use the 'head' parameter to read only the first N lines of a file, or the 'tail' parameter to read only the last N lines of a file. Operates on the file as text regardless of extension. Only works within allowed directories. Argument: "path".
+4. **list_directory**: Get a detailed listing of all files and directories in a specified path. Results clearly distinguish between files and directories with [FILE] and [DIR] prefixes. This tool is essential for understanding directory structure and finding specific files within a directory. Only works within allowed directories. Argument: "path".
+5. **search_files**: Recursively search for files and directories matching a pattern. The patterns should be glob-style patterns that match paths relative to the working directory. Use pattern like '*.ext' to match files in current directory, and '**/*.ext' to match files in all subdirectories. Returns full paths to all matching items. Great for finding files when you don't know their exact location. Only searches within allowed directories. Argumets: "path", "pattern".
+6. **write_file**: Create a new file or completely overwrite an existing file with new content. Use with caution as it will overwrite existing files without warning. Handles text content with proper encoding. Only works within allowed directories. Arguments: "path", "content".
+7. **edit_file**: Make line-based edits to a text file. Each edit replaces exact line sequences with new content. Returns a git-style diff showing the changes made. Only works within allowed directories. Arguments: "path", "edits".
 """

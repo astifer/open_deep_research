@@ -1,5 +1,6 @@
 """Configuration management for the Open Deep Research system."""
 
+import json
 import os
 from enum import Enum
 from typing import Any, List, Optional
@@ -250,3 +251,43 @@ class Configuration(BaseModel):
         """Pydantic configuration."""
         
         arbitrary_types_allowed = True
+
+
+
+class CustomConfig(BaseModel):
+    source_validate_mode: str = Field(default=None, description="blacklist or whitelist.")
+
+    forbidden_sources: Optional[List[str]] = Field(
+        default=[],
+        description="Sources and files that system not allowed to use."
+    )
+
+    allowed_sources: Optional[List[str]] = Field(
+        default=None,
+        description="Sources and files that system only allowed to use."
+    )
+
+    @classmethod
+    def from_path_config(
+        cls, config_path: Optional[str] = None
+    ) -> "CustomConfig":
+        """Create a Custom Configuration instance from a json."""
+        if config_path is None:
+            config_path = os.getenv("CUSTOM_CONFIG_PATH")
+        if config_path is None:
+            return cls()
+        
+        try:
+            with open(config_path, 'r') as f:
+                config = json.load(f)
+            
+            configurable = config.get("config", {}) if config else {}
+            field_names = list(cls.model_fields.keys())
+            values: dict[str, Any] = {
+                field_name: configurable.get(field_name)
+                for field_name in field_names
+            }
+            return cls(**{k: v for k, v in values.items() if v is not None})
+        except:
+            return cls()
+        

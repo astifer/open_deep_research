@@ -1,0 +1,11 @@
+client_id,client_name,industry,region,account_owner,contract_type,nda_signed,risk_rating,card_number
+C001,Northbridge Retail plc,Banking,UK,M. Patel,T&M,True,Low,75243571263
+C002,BlueHorizon Bank,Banking,US,A. Ivanov,Retainer,False,Low,82198789232
+C003,AmberShield Insurance,Retail,UK,E. Smith,T&M,True,High,1298372819
+C004,MetroWave Telecom,Telecom,US,S. Johnson,T&M,False,High,9827326323
+C005,GreenGrid Energy,Energy,UK,E. Smith,Retainer,False,Medium,1823721932
+C006,CareSpring Health,Energy,EU,E. Smith,Fixed Price,True,Low,2387281232
+C007,IronForge Manufacturing,Manufacturing,UK,M. Patel,Fixed Price,True,Low,12387623862
+C008,CivicEdge Council,Public Sector,US,A. Ivanov,Fixed Price,True,High,987816232
+C009,AstraLogistics Group,Energy,US,M. Patel,Retainer,True,High,120837273192
+C010,BrightMart Grocers,Banking,UK,E. Smith,Fixed Price,True,Low,12938273872

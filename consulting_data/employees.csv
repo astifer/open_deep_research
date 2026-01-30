@@ -1,0 +1,11 @@
+person_id,full_name,role,grade,location,email,is_billable
+E001,Artem Pereverzev,PMO,Analyst,Berlin,artem.pereverzev@example-consulting.test,False
+E002,Elena Smirnova,Solution Architect,Partner,Manchester,elena.smirnova@example-consulting.test,False
+E003,James Walker,Data Scientist,Senior Consultant,Berlin,james.walker@example-consulting.test,True
+E004,Aisha Khan,Cloud Engineer,Partner,London,aisha.khan@example-consulting.test,True
+E005,Mikhail Orlov,Cloud Engineer,Senior Manager,Manchester,mikhail.orlov@example-consulting.test,True
+E006,Sofia Rossi,PMO,Consultant,Warsaw,sofia.rossi@example-consulting.test,False
+E007,Daniel Kim,Cloud Engineer,Partner,Dubai,daniel.kim@example-consulting.test,True
+E008,Priya Nair,Solution Architect,Partner,London,priya.nair@example-consulting.test,True
+E009,Omar Hassan,Solution Architect,Analyst,Warsaw,omar.hassan@example-consulting.test,True
+E010,Anna Novak,Business Analyst,Senior Consultant,Manchester,anna.novak@example-consulting.test,True

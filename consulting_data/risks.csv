@@ -1,0 +1,11 @@
+risk_id,project_id,category,probability,impact,risk_score,description,mitigation,owner,status
+R_54618da7,P007,Dependencies,Medium,Medium,4,Stakeholders not aligned on scope and priorities,Run weekly steering committee; confirm scope baseline,Daniel Kim,Mitigating
+R_966743bc,P002,Dependencies,Low,Medium,2,Dependency on client data extracts delayed,Engage InfoSec early; provide architecture and DPIA,James Walker,Closed
+R_1828be7f,P002,Quality,High,High,9,Vendor contract not finalized,Run weekly steering committee; confirm scope baseline,Elena Smirnova,Open
+R_d98a62ee,P010,Dependencies,High,Low,3,Security approval for new tooling not granted yet,Escalate to procurement; define interim SoW,Omar Hassan,Open
+R_d40067c8,P005,Budget,Low,Low,1,Security approval for new tooling not granted yet,Run weekly steering committee; confirm scope baseline,Sofia Rossi,Open
+R_6763d0a5,P008,Budget,High,Low,3,Vendor contract not finalized,Book SMEs in advance; add backup resources,Anna Novak,Closed
+R_e8bf7ddd,P005,Dependencies,Low,Low,1,Dependency on client data extracts delayed,Book SMEs in advance; add backup resources,Artem Pereverzev,Open
+R_d7fd259d,P008,Dependencies,Medium,High,6,Dependency on client data extracts delayed,Engage InfoSec early; provide architecture and DPIA,James Walker,Closed
+R_0cf28ab8,P007,Dependencies,Medium,Low,2,Key SME availability limited during peak period,Agree data cut-off dates; introduce mock data for interim,Aisha Khan,Mitigating
+R_88bb81c1,P010,Schedule,Medium,Low,2,Stakeholders not aligned on scope and priorities,Agree data cut-off dates; introduce mock data for interim,Daniel Kim,Mitigating
